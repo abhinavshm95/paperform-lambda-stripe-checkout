@@ -2,6 +2,7 @@ const fetch = require("node-fetch");
 const moment = require("moment");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
+/* This function that will be triggered when the user clicks on the "Pay Now" button. */
 exports.handler = async (event) => {
     
      try {
